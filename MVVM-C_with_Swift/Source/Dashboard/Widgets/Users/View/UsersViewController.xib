@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UsersViewController" customModule="RxSwiftPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="JwY-Qb-Cfs" id="eN5-A6-hi3"/>
+                <outlet property="searchUserTextField" destination="64p-b4-MhT" id="TaF-G4-FVr"/>
+                <outlet property="userFoundLabel" destination="bNP-Rv-lMl" id="K30-GW-84U"/>
+                <outlet property="usersCountInfoLabel" destination="32f-Sa-kgF" id="CrI-qb-Xwy"/>
+                <outlet property="usersSearchView" destination="bgr-bX-R2Y" id="4NY-Om-X4n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="54" y="-29"/>
+        </view>
+        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" id="JwY-Qb-Cfs">
+            <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="388" y="-49"/>
+        </activityIndicatorView>
+        <view contentMode="scaleToFill" id="bgr-bX-R2Y" userLabel="UsersSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32f-Sa-kgF" userLabel="UsersCountInfoLabel">
+                    <rect key="frame" x="10" y="10" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search user by ID" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="64p-b4-MhT">
+                    <rect key="frame" x="10" y="41" width="355" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNP-Rv-lMl">
+                    <rect key="frame" x="10" y="106" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="32f-Sa-kgF" firstAttribute="leading" secondItem="bgr-bX-R2Y" secondAttribute="leading" constant="10" id="1lF-gh-keo"/>
+                <constraint firstAttribute="trailing" secondItem="64p-b4-MhT" secondAttribute="trailing" constant="10" id="2bx-sy-DvP"/>
+                <constraint firstItem="bNP-Rv-lMl" firstAttribute="leading" secondItem="bgr-bX-R2Y" secondAttribute="leading" constant="10" id="2yD-r9-fpQ"/>
+                <constraint firstAttribute="trailing" secondItem="32f-Sa-kgF" secondAttribute="trailing" constant="10" id="4Zz-7J-wnt"/>
+                <constraint firstItem="64p-b4-MhT" firstAttribute="leading" secondItem="bgr-bX-R2Y" secondAttribute="leading" constant="10" id="L9o-Xd-DDJ"/>
+                <constraint firstItem="bNP-Rv-lMl" firstAttribute="top" secondItem="64p-b4-MhT" secondAttribute="bottom" constant="35" id="Lb1-xi-UNa"/>
+                <constraint firstItem="64p-b4-MhT" firstAttribute="top" secondItem="32f-Sa-kgF" secondAttribute="bottom" constant="10" id="en1-Xb-YHg"/>
+                <constraint firstAttribute="trailing" secondItem="bNP-Rv-lMl" secondAttribute="trailing" constant="10" id="hog-c6-Rsb"/>
+                <constraint firstItem="32f-Sa-kgF" firstAttribute="top" secondItem="bgr-bX-R2Y" secondAttribute="top" constant="10" id="rbQ-Hk-hXe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="794.5" y="-29.5"/>
+        </view>
+    </objects>
+</document>

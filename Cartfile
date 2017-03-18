@@ -1,0 +1,2 @@
+github "ReactiveX/RxSwift" ~> 3.0
+github "Hearst-DD/ObjectMapper" ~> 2.2
